@@ -64,6 +64,7 @@ M.defaults = function()
   dofile(vim.g.base46_cache .. "lsp")
   require("nvchad.lsp").diagnostic_config()
 
+  setup_server("verible")
   setup_server("pyright")
   setup_server("clangd")
   setup_server("lua_ls", {
